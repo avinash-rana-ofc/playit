@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Logo from '../Assets/Logo.svg';
+import Logo from '../Assets/gaming.png';
 import {BsCart2} from "react-icons/bs";
 import { HiOutlineBars3 } from "react-icons/hi2";
 //import {HiOutlineBars3} from 'react-icons/hi2';
@@ -30,26 +30,26 @@ const Navbar = () => {
       text : "Contact",
       icon : <PhoneRoundedIcon/>
     },
-    {
-      text : "Cart",
-      icon : <ShoppingCartRoundedIcon/>
-    }
+    // {
+    //   text : "Cart",
+    //   icon : <ShoppingCartRoundedIcon/>
+    // }
   ]; 
   return (
     <nav>
       <div className = "nav-logo-container">
-        <img src = {Logo} alt =""></img>
+        <img src = {Logo} alt ="" style={{width: 175, height: 65, position: 'absolute'}}></img>
       </div>
       <div className='navbar-links-container'>
         <a href=''>Home</a>
         <a href=''>About</a>
         <a href=''>Testimonials</a>
         <a href=''>Contact</a>
-        <a href=''>
+        {/* <a href=''>
           <BsCart2 className = "navbar-cart-icon"/>
-        </a>
+        </a> */}
         <button className='primary-button'>
-          Booking Now
+          Enquire Now
         </button>
       </div>
       <div className="navbar-menu-container">
